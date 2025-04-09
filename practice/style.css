@@ -1,0 +1,6 @@
+.salutation {
+  display: flex;
+  font-weight: 700;
+  color: #087f9c;
+  font-size: 18px;
+}
