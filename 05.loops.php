@@ -8,13 +8,53 @@
 
 // };
 
-$x = 1;
+$x = 30;
+
+// while ($x <= 15) {
+
+//     echo 'Number' . $x  . '<br />';
+
+//     $x++;
+
+// };
+
+// do {
+
+//     echo 'Number ' . $x . '<br />';
+//     $x++;
+
+// } while ($x <= 10);
 
 
-while ($x <= 15) {
+$posts = [
+    'Premier article',
+    'Deuxième article',
+    'Troisième article',
+    'Article bonus',
+];
 
-    echo 'Number' . $x  . '<br />';
+// foreach ($posts as $p) {
 
-    $x++;
+//     echo "<p>{$p}</p>";
 
+// };
+
+
+$person = [
+'first_name' => 'Eddy',
+'last_name' => 'David',
+'email' => 'eddy@david.fr'
+];
+
+
+// foreach ($posts as $index => $post) {
+
+//     echo $index . ' - ' . $post . '<br>';
+
+// };
+
+
+foreach ($person as $key => $value) {
+
+    echo "$key - $value <br />";
 };
