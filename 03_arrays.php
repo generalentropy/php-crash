@@ -42,3 +42,44 @@ echo "<p>$hex[green]</p>";
 echo "<p>$hex[red]</p>";
 
 echo "<p>$hex[blue]</p>";
+
+
+$person = ['first_name' => 'Eddy',
+'last_name' => 'David',
+'email' => "eddydavid@email.com"
+];
+
+// Bonne pratique
+echo "<p>{$hex['green']}</p>";
+echo "<p>{$person['first_name']}</p>" ;
+
+
+$people = [
+    [
+        'first_name' => 'Eddy',
+        'last_name' => 'David',
+        'email' => 'eddydavid@email.com'
+    ],
+    [
+        'first_name' => 'Anna',
+        'last_name' => 'Martin',
+        'email' => 'anna.martin@email.com'
+    ],
+    [
+        'first_name' => 'Lucas',
+        'last_name' => 'Dubois',
+        'email' => 'lucas.dubois@email.com'
+    ]
+];
+
+
+
+echo $people[1]['email'];
+
+
+var_dump(json_encode($people));
+
+$jsonf = json_encode($people);
+$decoded = json_decode(($jsonf));
+
+print_r($decoded);
