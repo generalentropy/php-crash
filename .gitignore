@@ -1,0 +1,28 @@
+# Fichiers système 
+.DS_Store
+Thumbs.db
+
+# Fichiers de logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*.swp
+
+# Fichiers de configuration perso
+.env
+
+# Cache
+cache/
+*.cache
+
+# Dossiers IDE
+.vscode/
+.idea/
+
+# Dépendances Composer
+vendor/
+
+# Dépendances NPM 
+node_modules/
