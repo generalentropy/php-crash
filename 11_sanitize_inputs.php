@@ -13,7 +13,6 @@
 
 if (isset($_POST['submit'])) {
     // $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS) ;
-
     // $age = htmlspecialchars($_POST['age']);
 
     // Récupère directement une valeur d'une superglobale ($_POST, $_GET, etc.) de façon sécurisée.
