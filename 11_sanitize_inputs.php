@@ -12,14 +12,20 @@
 
 
 if (isset($_POST['submit'])) {
-    echo $_POST['name'];
-    echo $_POST['age'];
+    // $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS) ;
+
+    // $age = htmlspecialchars($_POST['age']);
+
+    $age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_SPECIAL_CHARS) ;
+
+    $name = filter_var($_POST['name'], FILTER_SANITIZE_SPECIAL_CHARS);
+    echo $name;
 }
 
 ?>
 
 
-<a href="<?php echo $_SERVER['PHP_SELF']; ?>?name=Eddy&age=38">Click</a>
+<!-- <a href="<?php echo $_SERVER['PHP_SELF']; ?>?name=Eddy&age=38">Click</a> -->
 
 
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='POST'>
