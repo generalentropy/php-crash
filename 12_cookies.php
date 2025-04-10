@@ -10,7 +10,9 @@ setcookie('name', 'Eddy', time() + 86400 * 30);
 // $_COOKIE est un tableau associatif
 $name = $_COOKIE['name'];
 
-
+// Le cookie est envoyé au navigateur via l’en-tête HTTP.
+// Il ne sera accessible via $_COOKIE qu’au prochain chargement de la page.
+// sur le premier chargement, $_COOKIE['name'] n'existe pas encore.
 
 // setcookie('name', '', time() - 86400)
 ?>
